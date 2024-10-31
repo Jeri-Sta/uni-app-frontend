@@ -1,0 +1,112 @@
+.container-register {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+/** Header **/
+.container-register-header {
+    height: 40%;
+    background-color: #FFDCDC08;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.logo {
+    border-radius: 180px;
+}
+.logo-title {
+    color: #FFEFEF4D;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+/** Body geral **/
+.container-register-body {
+    height: 60%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+/* Título do body */
+.container-register-body-title {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.register-body-title {
+    color: #948787;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.register-body-title-space {
+    width: 44px;
+}
+/* Botão de voltar */
+:host ::ng-deep .register-body-title-button button.p-button {
+    color: white;
+    background: none;
+}
+
+/** Formulário **/
+.container-register-body-form-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    align-items: center;
+}
+.container-register-body-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+:host ::ng-deep input.p-inputtext {
+    width: 288px;
+    height: 35px;
+    border: none;
+    border-radius: 15px;
+    background-color: #94878742;
+}
+
+:host ::ng-deep input.p-inputtext:focus {
+    box-shadow: none;
+}
+
+
+/** Botão de registrar-se **/
+:host ::ng-deep .register-body-form-button button.p-button {
+    border-radius: 20px;
+    width: 113px;
+    height: 30px;
+}
+:host ::ng-deep .register-body-form-button span.p-button-label {
+    color: #171414;
+    font-size: 18px;
+    line-height: 18px;
+}
+.container-register-body-form-button {
+    margin-top: 1.2rem;
+}
+
+/** Footer **/
+.container-register-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/** Geral **/
+label {
+    color: #948787BF;
+}

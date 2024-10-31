@@ -1,0 +1,62 @@
+<div class="container-register">
+    <div class="container-register-header">
+        <img class="logo" ngSrc="assets/logo.png" alt="logo" height="138" width="135"/>
+        <h2 class="logo-title">Velha Central</h2>
+    </div>
+    <div class="container-register-body">
+        <div class="container-register-body-title">
+            <p-button
+                    class="register-body-title-button"
+                    icon="pi pi-angle-left"
+                    [rounded]="true"
+                    [text]="true"
+                    (onClick)="goBack()"
+            />
+            <h3 class="register-body-title">Criar conta</h3>
+            <span class="register-body-title-space"></span>
+        </div>
+        <div class="container-register-body-form-fields">
+            <div class="container-register-body-field">
+                <label for="username">Usuário</label>
+                <input
+                        pInputText
+                        id="username"
+                        />
+            </div>
+            <div class="container-register-body-field">
+                <label for="email">E-mail</label>
+                <input
+                        pInputText
+                        id="email"
+                />
+            </div>
+            <div class="container-register-body-field">
+                <label for="password">Senha</label>
+                <p-password
+                        [feedback]="false"
+                        inputId="password"
+                />
+            </div>
+            <div class="container-register-body-field">
+                <label for="birthdate">Data de nascimento</label>
+                <p-calendar
+                        class="register-body-field-birthdate"
+                        [(ngModel)]="date"
+                        inputId="birthdate"
+                        showIcon="true"
+                        [iconDisplay]="'input'"
+                        dateFormat="dd/mm/yy"
+                        placeholder="dd/mm/aaaa"
+                />
+            </div>
+        </div>
+        <div class="container-register-body-form-button">
+            <p-button class="register-body-form-button"
+                      severity="danger"
+                      label="Registrar-se"></p-button>
+        </div>
+    </div>
+    <div class="container-register-footer">
+        <img ngSrc="assets/footer-logo.png" alt="footer-logo" height="100" width="45"/>
+    </div>
+</div>

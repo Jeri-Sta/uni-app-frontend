@@ -57,6 +57,7 @@
     font-size: 18px;
     line-height: 18px;
     background-color: inherit;
+    justify-content: center;
 }
 
 :host ::ng-deep .login-button-sign-in {
