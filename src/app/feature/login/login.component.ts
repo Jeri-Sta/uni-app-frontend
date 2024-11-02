@@ -10,4 +10,12 @@ export class LoginComponent {
 
   constructor(protected router: Router) {
   }
+
+  protected goRegister(): void {
+    this.router.navigate(['/register']);
+  }
+
+  protected goRecovery(): void {
+    this.router.navigate(['/recovery']);
+  }
 }

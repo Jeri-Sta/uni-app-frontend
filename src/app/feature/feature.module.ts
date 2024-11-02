@@ -19,6 +19,7 @@ import {NgxMaskDirective, provideNgxMask} from "ngx-mask";
 import {MessageModule} from "primeng/message";
 import {MessagesModule} from "primeng/messages";
 import {UtilsModule} from "../utils/utils.module";
+import {PasswordRecoveryComponent} from "./password-recovery/password-recovery.component";
 
 @NgModule({
     imports: [
@@ -45,7 +46,8 @@ import {UtilsModule} from "../utils/utils.module";
     ],
     declarations: [
         LoginComponent,
-        RegisterComponent
+        RegisterComponent,
+        PasswordRecoveryComponent
     ],
     exports: [
     ],

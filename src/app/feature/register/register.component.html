@@ -73,7 +73,7 @@
             label="Entrar"
             severity="success" />
     </div>
-    <p-messages class="reguster-success-message" key="success" [closable]="false" />
+    <p-messages *ngIf="success" class="register-success-message" [value]="successMessage" [closable]="false" />
     <app-footer/>
 </div>
 <p-toast [life]="10000" position="top-center" key="message" />

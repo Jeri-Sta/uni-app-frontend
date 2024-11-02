@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {Router} from "@angular/router";
 import {Location} from "@angular/common";
 import {FormControl, FormGroup, Validators} from "@angular/forms";
-import {MessageService} from "primeng/api";
+import {Message, MessageService} from "primeng/api";
 
 @Component({
   selector: 'app-register',
@@ -14,6 +14,13 @@ export class RegisterComponent implements OnInit {
   protected formGroup!: FormGroup;
   protected success: boolean = false;
   protected isLoading: boolean = false;
+  protected successMessage: Message[] = [
+    {
+      severity: "success",
+      detail: "Conta criada com sucesso.",
+      icon: "none"
+    }
+  ]
 
   constructor(private router: Router, private location:  Location, private messageService: MessageService) {
   }
@@ -41,23 +48,6 @@ export class RegisterComponent implements OnInit {
       this.success = true;
       this.isLoading = false;
       this.formGroup.enable();
-
-      this.displaySuccessMessage();
-      /*this.messageService.add({
-        key: "message",
-        severity: 'error',
-        summary: "Ocorreu um erro",
-        detail: "Teste erro"
-      })*/
-    });
-  }
-
-  protected displaySuccessMessage() {
-    this.messageService.add({
-      key: "success",
-      severity: "success",
-      detail: "Conta criada com sucesso.",
-      icon: "none"
     });
   }
 

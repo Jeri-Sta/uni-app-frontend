@@ -4,7 +4,7 @@
         <div class="login-fields">
             <input type="text" pInputText class="login-input" placeholder="Usuário" />
             <p-password class="login-input" [feedback]="false" placeholder="Senha" />
-            <a class="login-forgot-password">Esqueceu sua senha?</a>
+            <a (click)="goRecovery()" class="login-forgot-password">Esqueceu sua senha?</a>
         </div>
         <div class="login-buttons">
             <p-button class="login-button login-button-sign-in" severity="danger">Entrar</p-button>
@@ -13,6 +13,6 @@
     </body>
     <footer class="login-footer">
         <p class="login-footer-dont-have-account">Não tem uma conta?</p>
-        <a (click)="router.navigate(['/register'])" class="login-sign-up">Registre-se</a>
+        <a (click)="goRegister()" class="login-sign-up">Registre-se</a>
     </footer>
 </div>

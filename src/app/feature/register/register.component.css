@@ -93,18 +93,18 @@
 :host ::ng-deep p-messages {
     width: 100%;
 }
-:host ::ng-deep .reguster-success-message div.p-message-success {
+:host ::ng-deep .register-success-message div.p-message-success {
     background: rgba(96, 237, 138, 0.07);
     color: white;
 }
-:host ::ng-deep .reguster-success-message div.p-message-success .p-message-icon {
+:host ::ng-deep .register-success-message div.p-message-success .p-message-icon {
     color: white;
 }
-:host ::ng-deep .reguster-success-message div.p-message-wrapper {
+:host ::ng-deep .register-success-message div.p-message-wrapper {
     justify-content: center;
     height: 5rem;
 }
-:host ::ng-deep .reguster-success-message span.p-message-detail {
+:host ::ng-deep .register-success-message span.p-message-detail {
     color: rgba(160, 228, 180, 1);
 }
 
