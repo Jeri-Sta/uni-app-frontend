@@ -1,9 +1,9 @@
 <div class="login">
-    <div class="login-header">
+    <header class="login-header">
         <img class="logo" ngSrc="assets/logo.png" alt="logo" height="138" width="135"/>
         <h2 class="logo-title">Velha Central</h2>
-    </div>
-    <div class="login-body">
+    </header>
+    <body class="login-body">
         <div class="login-fields">
             <input type="text" pInputText class="login-input" placeholder="Usuário" />
             <p-password class="login-input" [feedback]="false" placeholder="Senha" />
@@ -13,9 +13,9 @@
             <p-button class="login-button login-button-sign-in" severity="danger">Entrar</p-button>
             <p-button class="login-button login-button-visit" severity="success">Visitar</p-button>
         </div>
-        <div class="login-footer">
-            <p class="login-footer-dont-have-account">Não tem uma conta?</p>
-            <a (click)="router.navigate(['/register'])" class="login-sign-up">Registre-se</a>
-        </div>
-    </div>
+    </body>
+    <footer class="login-footer">
+        <p class="login-footer-dont-have-account">Não tem uma conta?</p>
+        <a (click)="router.navigate(['/register'])" class="login-sign-up">Registre-se</a>
+    </footer>
 </div>

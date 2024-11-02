@@ -1,13 +1,14 @@
 .container-register {
     display: flex;
     flex-direction: column;
-    height: 100%;
     width: 100%;
+    overflow-y: scroll;
 }
 
 /** Header **/
 .container-register-header {
-    height: 40%;
+    height: 318px;
+    width: 100%;
     background-color: #FFDCDC08;
     display: flex;
     justify-content: center;
@@ -26,11 +27,11 @@
 
 /** Body geral **/
 .container-register-body {
-    height: 60%;
     display: flex;
     justify-content: start;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 1rem;
 }
 /* Título do body */
 .container-register-body-title {
@@ -85,7 +86,7 @@
 /** Botão de registrar-se **/
 :host ::ng-deep .register-body-form-button button.p-button {
     border-radius: 20px;
-    width: 113px;
+    width: 143px;
     height: 30px;
 }
 :host ::ng-deep .register-body-form-button span.p-button-label {
@@ -103,8 +104,51 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    bottom: 0;
 }
 
+/** Sucesso **/
+.container-register-success {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+:host ::ng-deep p-messages {
+    width: 100%;
+}
+:host ::ng-deep .reguster-success-message div.p-message-success {
+    background: rgba(96, 237, 138, 0.07);
+    color: white;
+}
+:host ::ng-deep .reguster-success-message div.p-message-success .p-message-icon {
+    color: white;
+}
+:host ::ng-deep .reguster-success-message div.p-message-wrapper {
+    justify-content: center;
+    height: 5rem;
+}
+:host ::ng-deep .reguster-success-message span.p-message-detail {
+    color: rgba(160, 228, 180, 1);
+}
+
+
+/** Botão de entrar **/
+:host ::ng-deep .container-register-success-button button.p-button {
+    width: 145px;
+    height: 30px;
+    border-radius: 20px;
+    background: rgba(161, 224, 158, 0.79);
+}
+:host ::ng-deep .container-register-success-button span.p-button-label {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+}
 
 /** Geral **/
 label {

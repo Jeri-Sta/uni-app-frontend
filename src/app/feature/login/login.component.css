@@ -1,12 +1,11 @@
 .login {
     display: flex;
     flex-direction: column;
-    height: 100%;
     width: 100%;
 }
 
 .login-header {
-    height: 40%;
+    height: 318px;
     background-color: #FFDCDC08;
     display: flex;
     justify-content: center;
