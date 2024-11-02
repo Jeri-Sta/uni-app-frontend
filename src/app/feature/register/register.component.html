@@ -1,8 +1,5 @@
 <div class="container-register">
-    <header class="container-register-header">
-        <img class="logo" ngSrc="assets/logo.png" alt="logo" height="138" width="135"/>
-        <h2 class="logo-title">Velha Central</h2>
-    </header>
+    <app-header />
     <body *ngIf="!success" class="container-register-body">
         <form [formGroup]="formGroup">
             <div class="container-register-body-title">
@@ -77,8 +74,6 @@
             severity="success" />
     </div>
     <p-messages class="reguster-success-message" key="success" [closable]="false" />
-    <footer class="container-register-footer">
-        <img ngSrc="assets/footer-logo.png" alt="footer-logo" height="95" width="40"/>
-    </footer>
+    <app-footer/>
 </div>
 <p-toast [life]="10000" position="top-center" key="message" />

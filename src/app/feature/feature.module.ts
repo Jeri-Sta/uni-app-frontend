@@ -18,6 +18,7 @@ import {CalendarModule} from "primeng/calendar";
 import {NgxMaskDirective, provideNgxMask} from "ngx-mask";
 import {MessageModule} from "primeng/message";
 import {MessagesModule} from "primeng/messages";
+import {UtilsModule} from "../utils/utils.module";
 
 @NgModule({
     imports: [
@@ -39,7 +40,8 @@ import {MessagesModule} from "primeng/messages";
         CalendarModule,
         NgxMaskDirective,
         MessageModule,
-        MessagesModule
+        MessagesModule,
+        UtilsModule
     ],
     declarations: [
         LoginComponent,
