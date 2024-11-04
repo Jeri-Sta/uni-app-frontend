@@ -1,29 +1,31 @@
-import {Component, OnInit} from '@angular/core';
-import {Router} from "@angular/router";
-import {Location} from "@angular/common";
-import {FormControl, FormGroup, Validators} from "@angular/forms";
-import {Message, MessageService} from "primeng/api";
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Location } from '@angular/common';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Message, MessageService } from 'primeng/api';
 
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
-  styleUrl: './register.component.css'
+  styleUrl: './register.component.css',
 })
 export class RegisterComponent implements OnInit {
-
   protected formGroup!: FormGroup;
   protected success: boolean = false;
   protected isLoading: boolean = false;
   protected successMessage: Message[] = [
     {
-      severity: "success",
-      detail: "Conta criada com sucesso.",
-      icon: "none"
-    }
-  ]
+      severity: 'success',
+      detail: 'Conta criada com sucesso.',
+      icon: 'none',
+    },
+  ];
 
-  constructor(private router: Router, private location:  Location, private messageService: MessageService) {
-  }
+  constructor(
+    private router: Router,
+    private location: Location,
+    private messageService: MessageService
+  ) {}
 
   date: Date | undefined;
   data: Date | undefined;
@@ -31,7 +33,10 @@ export class RegisterComponent implements OnInit {
   ngOnInit() {
     this.formGroup = new FormGroup({
       username: new FormControl(undefined, Validators.required),
-      email: new FormControl(undefined, [Validators.required, Validators.email]),
+      email: new FormControl(undefined, [
+        Validators.required,
+        Validators.email,
+      ]),
       password: new FormControl(undefined, Validators.required),
       birthDate: new FormControl(undefined, Validators.required),
     });
@@ -44,7 +49,7 @@ export class RegisterComponent implements OnInit {
   protected onRegister(): void {
     this.formGroup.disable();
     this.isLoading = true;
-    this.delay(2000).then(r => {
+    this.delay(2000).then((r) => {
       this.success = true;
       this.isLoading = false;
       this.formGroup.enable();
@@ -56,6 +61,8 @@ export class RegisterComponent implements OnInit {
   }
 
   async delay(ms: number) {
-    await new Promise<void>(resolve => setTimeout(()=>resolve(), ms)).then(()=>console.log("fired"));
+    await new Promise<void>((resolve) => setTimeout(() => resolve(), ms)).then(
+      () => console.log('fired')
+    );
   }
 }

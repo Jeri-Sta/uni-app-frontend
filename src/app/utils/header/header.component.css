@@ -1,18 +1,18 @@
 /** Header **/
 .container-header {
-    height: 318px;
-    width: 100%;
-    background-color: #FFDCDC08;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  height: 318px;
+  width: 100%;
+  background-color: #ffdcdc08;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .logo {
-    border-radius: 180px;
+  border-radius: 180px;
 }
 .logo-title {
-    color: #FFEFEF4D;
-    font-weight: 400;
-    font-size: 16px;
+  color: #ffefef4d;
+  font-weight: 400;
+  font-size: 16px;
 }

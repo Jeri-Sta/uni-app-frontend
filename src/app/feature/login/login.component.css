@@ -1,104 +1,104 @@
 .login {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .login-body {
-    height: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .login-fields {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
 }
 
 .login-buttons {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 3rem;
 }
 
 :host ::ng-deep .p-button {
-    width: 267px;
-    height: 30px;
-    padding: 0;
-    border-radius: 20px;
-    font-size: 18px;
-    line-height: 18px;
-    background-color: inherit;
-    justify-content: center;
+  width: 267px;
+  height: 30px;
+  padding: 0;
+  border-radius: 20px;
+  font-size: 18px;
+  line-height: 18px;
+  background-color: inherit;
+  justify-content: center;
 }
 
 :host ::ng-deep .login-button-sign-in {
-    background-color: rgba(239, 147, 147, 0.79);
-    border-radius: 20px;
+  background-color: rgba(239, 147, 147, 0.79);
+  border-radius: 20px;
 }
 
 :host ::ng-deep .login-button-visit {
-    background-color: rgba(161, 224, 158, 0.79);
-    border-radius: 20px;
+  background-color: rgba(161, 224, 158, 0.79);
+  border-radius: 20px;
 }
 
 .login-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.7rem;
 }
 
 .login-footer-dont-have-account {
-    margin: 0;
-    font-size: 16px;
-    line-height: 16px;
-    color: #948787;
+  margin: 0;
+  font-size: 16px;
+  line-height: 16px;
+  color: #948787;
 }
 
 .login-sign-up {
-    font-size: 16px;
-    line-height: 16px;
-    color: #948787;
-    border-bottom: 1px solid #948787;
+  font-size: 16px;
+  line-height: 16px;
+  color: #948787;
+  border-bottom: 1px solid #948787;
 }
 
 .login-forgot-password {
-    width: 100%;
+  width: 100%;
 }
 
 :host ::ng-deep .p-inputtext {
-    width: 267px;
-    height: 50px;
-    text-align: center;
-    background-color: #242121;
-    border: none;
-    border-bottom: 1px solid #948787;
-    border-radius: 0;
-    padding: 0;
-    font-size: 17px;
-    line-height: 17px;
+  width: 267px;
+  height: 50px;
+  text-align: center;
+  background-color: #242121;
+  border: none;
+  border-bottom: 1px solid #948787;
+  border-radius: 0;
+  padding: 0;
+  font-size: 17px;
+  line-height: 17px;
 }
 
 :host ::ng-deep .p-inputtext:enabled {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 :host ::ng-deep .p-inputtext::placeholder {
-    color: #94878769;
+  color: #94878769;
 }
 
 .login-forgot-password {
-    font-size: 14px;
-    line-height: 14px;
-    color: #948787;
+  font-size: 14px;
+  line-height: 14px;
+  color: #948787;
 }
