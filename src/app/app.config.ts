@@ -5,11 +5,13 @@ import {RegisterComponent} from "./feature/register/register.component";
 import {provideAnimations} from "@angular/platform-browser/animations";
 import {TranslateModule} from "@ngx-translate/core";
 import {PasswordRecoveryComponent} from "./feature/password-recovery/password-recovery.component";
+import { ResetPasswordComponent } from './feature/password-recovery/reset-password/reset-password.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'recovery', component: PasswordRecoveryComponent },
+  { path: 'reset-password', component: ResetPasswordComponent }
 ]
 export const appConfig: ApplicationConfig = {
   providers: [

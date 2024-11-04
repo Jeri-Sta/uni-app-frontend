@@ -20,6 +20,7 @@ import { MessageModule } from 'primeng/message';
 import { MessagesModule } from 'primeng/messages';
 import { UtilsModule } from '../utils/utils.module';
 import { PasswordRecoveryComponent } from './password-recovery/password-recovery.component';
+import { ResetPasswordComponent } from './password-recovery/reset-password/reset-password.component';
 
 @NgModule({
   imports: [
@@ -44,7 +45,12 @@ import { PasswordRecoveryComponent } from './password-recovery/password-recovery
     MessagesModule,
     UtilsModule,
   ],
-  declarations: [LoginComponent, RegisterComponent, PasswordRecoveryComponent],
+  declarations: [
+    LoginComponent,
+    RegisterComponent,
+    PasswordRecoveryComponent,
+    ResetPasswordComponent,
+  ],
   exports: [],
   providers: [provideNgxMask(), MessageService],
 })

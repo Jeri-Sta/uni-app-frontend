@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Message, MessageService } from 'primeng/api';
 import { Location } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-password-recovery',
@@ -21,7 +22,7 @@ export class PasswordRecoveryComponent implements OnInit {
   ];
 
   constructor(
-    private location: Location,
+    private router: Router,
     private messageService: MessageService
   ) {}
 
@@ -32,10 +33,6 @@ export class PasswordRecoveryComponent implements OnInit {
         Validators.email,
       ]),
     });
-  }
-
-  protected goBack(): void {
-    this.location.back();
   }
 
   protected onSend(): void {
@@ -51,5 +48,9 @@ export class PasswordRecoveryComponent implements OnInit {
     await new Promise<void>((resolve) => setTimeout(() => resolve(), ms)).then(
       () => console.log('fired')
     );
+  }
+
+  protected goToLogin() {
+    this.router.navigate(['/login']);
   }
 }

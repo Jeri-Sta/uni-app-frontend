@@ -23,7 +23,6 @@ export class RegisterComponent implements OnInit {
 
   constructor(
     private router: Router,
-    private location: Location,
     private messageService: MessageService
   ) {}
 
@@ -40,10 +39,6 @@ export class RegisterComponent implements OnInit {
       password: new FormControl(undefined, Validators.required),
       birthDate: new FormControl(undefined, Validators.required),
     });
-  }
-
-  protected goBack(): void {
-    this.location.back();
   }
 
   protected onRegister(): void {
