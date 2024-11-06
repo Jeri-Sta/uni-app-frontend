@@ -1,3 +1,27 @@
-<p-sidebar [(visible)]="visible" showCloseIcon="true">
-
+<p-sidebar class="sidebar" [(visible)]="visible" showCloseIcon="false">
+  <ng-template pTemplate="header">
+    <div class="header-container">
+      <div class="container-header-icon">
+        <img
+          ngSrc="assets/profile.png"
+          alt="Profile Picture"
+          class="header-icon"
+          height="42"
+          width="43"
+        />
+      </div>
+      <div class="container-header-title">
+        <h4 class="header-title">Olá Usuário</h4>
+        <p class="header-description">Group</p>
+      </div>
+      <div class="container-header-close">
+        <p-button
+          (click)="visible = false"
+          icon="pi pi-angle-left"
+          class="close-button"
+        />
+      </div>
+    </div>
+  </ng-template>
+  <ng-template class="content"> </ng-template>
 </p-sidebar>
